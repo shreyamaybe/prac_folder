@@ -23,6 +23,12 @@ class Course:
             return True
         return False
 
+    def get_average_score(self):
+        score=0
+        for student in self.students:
+            value += student.get_grade()
+        return score/len(self.students)
+
 s1= Student("shreya", 20, 9.05)
 s2= Student("riya", 21, 8.5)
 s3= Student("priya", 20, 7.2)
@@ -30,6 +36,6 @@ s3= Student("priya", 20, 7.2)
 course1= Course("Maths", 2)
 course2= Course("Physics", 5)
 
+
 course2.add_students(s1)
 course2.add_students(s3)
-
