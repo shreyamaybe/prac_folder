@@ -55,3 +55,13 @@ for numbers in range(1, 10, 2): #(start, end, step)
 #tuples: 15
 numbers= (1, 2, 3, 4)
 #unchangable kinda
+
+
+#dictionaries: 16
+monthConversion= {
+    "jan": "january",
+    "feb": "february",
+    "mar": "march"
+}
+print(monthConversion["mar"])
+print(monthConversion.get("mar"))
